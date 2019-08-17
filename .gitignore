@@ -113,7 +113,7 @@ typings/
 # these rules might exclude image files for figures etc.
 # *.ps
 # *.eps
-# *.pdf
+*.pdf
 
 ## Generated if empty string is given at "Please type another file name for output:"
 .pdf
@@ -373,3 +373,6 @@ TSWLatexianTemp*
 .history
 
 # End of https://www.gitignore.io/api/tex,node,visualstudiocode
+
+# Don't push template.tex(because template.tex was licensed by GPLv2)
+/template.tex
