@@ -1,0 +1,20 @@
+{
+  "name": "scripturam",
+  "version": "0.0.0",
+  "repository": "ssh://git@github.com/atnanasi/scripturam.git",
+  "author": "Atnanasi <ys2000pro@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "devDependencies": {
+    "@textlint/textlint-plugin-markdown": "^5.1.8",
+    "textlint": "^11.3.1",
+    "textlint-rule-preset-ja-spacing": "^2.0.1",
+    "textlint-rule-preset-ja-technical-writing": "^3.1.3",
+    "textlint-rule-preset-japanese": "^4.0.4"
+  },
+  "scripts": {
+    "lint": "textlint ./**/*.md",
+    "lint:fix": "yarn run lint --fix",
+    "build": "bash ./pandoc/build.sh"
+  }
+}
